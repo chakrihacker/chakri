@@ -5,154 +5,171 @@
   <title>Chakravarthy - Full Stack Web Developer</title>
   <meta name="description" content="Chakravarthy - Developer, maker of things, experimental mind">
   <meta name="author" content="chakrihacker">
+  <link rel="stylesheet" href="stylesheets/main.css">
 </head>
 <body>
 <noscript><p class="No-jsWarn"><a href="http://www.enable-javascript.com/" target="_blank">To enjoy the full website,
   please enable JavaScript</a></p></noscript>
-<header>
-  <p>Chakravarthy</p>
-  <ul>
-    <li>Home</li>
-    <li>Skills</li>
-    <li>Experience</li>
-    <li>Projects</li>
-    <li>Contact</li>
-  </ul>
-  <div class="social">
-    <p class="github">Github</p>
-    <p class="twitter">Twitter</p>
-    <p class="freecodecamp">Freecodecamp</p>
-    <p class="codesandbox">Codesandbox</p>
-    <img src="My Image" alt="Chakravarthy" class="me">
-  </div>
-</header>
-<div class="main">
-  <section id="userrow">
-    <div class="intro">
-      <h3>Who am I ?</h3>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/trianglify/0.4.0/trianglify.min.js"></script>
+<script>
+  var pattern = Trianglify({
+    width: window.innerWidth,
+    height: window.innerHeight
+  });
+  document.body.appendChild(pattern.canvas())
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/svg.js/2.6.3/svg.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+<div class="site">
+  <header>
+    <p>Chakravarthy</p>
+    <ul>
+      <li>Home</li>
+      <li>Skills</li>
+      <li>Experience</li>
+      <li>Projects</li>
+      <li>Contact</li>
+    </ul>
+    <div class="social">
+      <p class="github">Github</p>
+      <p class="twitter">Twitter</p>
+      <p class="freecodecamp">Freecodecamp</p>
+      <p class="codesandbox">Codesandbox</p>
+      <img src="My Image" alt="Chakravarthy" class="me">
+    </div>
+  </header>
+  <div class="main">
+    <section id="me">
+      <div class="intro">
+        <h3>Who am I ?</h3>
+        <p>
+          My name is chakravarthy. I'm 24 years old and live in hyderabad, India.
+          I'm an <strong>ambitious developer</strong>, passionate about new technology
+          and it's capabilities. I am inspired by fast-growing companies and hope to
+          become the lead of one in the future.
+        </p>
+      </div>
+      <div class="information">
+        <p class="name">Subramanya Chakravarthy</p>
+        <p class="mail">chakri@chakrihacker.com</p>
+        <p class="location">Hyderabad, India</p>
+      </div>
+    </section>
+    <section id="skills">
+      <div>
+        <h2>Skills</h2>
+        <p>I love development and design. I'm most comfortable with front-end
+          technologies like React and Redux, but I have also done a lot of
+          work in back-end technologies like Express(Node). I'm a big fan of
+          functional programming.</p>
+        <div class="coding-skills">
+          <h3>Coding Skills</h3>
+          <span>Programming Languages</span>
+          <ul>
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>Java</li>
+            <li>C++</li>
+            <li>Arduino</li>
+          </ul>
+          <span>Backend Technologies</span>
+          <ul>
+            <li>Node.js</li>
+            <li>(No)Sql</li>
+            <li>Nginx</li>
+            <li>Serverless</li>
+          </ul>
+          <span>Frontend Technologies</span>
+          <ul>React</ul>
+          <ul>HTML5</ul>
+          <ul>CSS3</ul>
+          <ul>Sass</ul>
+          <ul>JQuery</ul>
+        </div>
+        <div class="tools">
+          <h3>Tools</h3>
+          <span>Version Control Systems</span>
+          <ul>
+            <li>Git</li>
+            <li>SVN</li>
+          </ul>
+          <span>Build Automation</span>
+          <ul>
+            <li>Webpack</li>
+            <li>Gulp</li>
+          </ul>
+        </div>
+        <div class="languages">
+          <ul>
+            <li>Telugu</li>
+            <li>English</li>
+            <li>Hindi</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="experience">
+      <h3>Experience</h3>
+      <p>I'm trying to learn and gain as much experience as possible each year.</p>
+      <h3>Work</h3>
+      <span>Remarkable Software Services</span>
       <p>
-        My name is chakravarthy. I'm 24 years old and live in hyderabad, India.
-        I'm an <strong>ambitious developer</strong>, passionate about new technology
-        and it's capabilities. I am inspired by fast-growing companies and hope to
-        become the lead of one in the future.
+        It is focused on casino games. I'm responsible for implementing backend in
+        Node.js. Then I created a blackjack game using meteor, helping them to move from
+        unity to web(universal)
       </p>
-    </div>
-    <div class="information">
-      <p class="name">Subramanya Chakravarthy</p>
-      <p class="mail">chakri@chakrihacker.com</p>
-      <p class="location">Hyderabad, India</p>
-    </div>
-  </section>
-  <section id="skills">
-    <div>
-      <h2>Skills</h2>
-      <p>I love development and design. I'm most comfortable with front-end
-        technologies like React and Redux, but I have also done a lot of
-        work in back-end technologies like Express(Node). I'm a big fan of
-        functional programming.</p>
-      <div class="coding-skills">
-        <h3>Coding Skills</h3>
-        <span>Programming Languages</span>
-        <ul>
-          <li>JavaScript</li>
-          <li>Python</li>
-          <li>Java</li>
-          <li>C++</li>
-          <li>Arduino</li>
-        </ul>
-        <span>Backend Technologies</span>
-        <ul>
-          <li>Node.js</li>
-          <li>(No)Sql</li>
-          <li>Nginx</li>
-          <li>Serverless</li>
-        </ul>
-        <span>Frontend Technologies</span>
-        <ul>React</ul>
-        <ul>HTML5</ul>
-        <ul>CSS3</ul>
-        <ul>Sass</ul>
-        <ul>JQuery</ul>
-      </div>
-      <div class="tools">
-        <h3>Tools</h3>
-        <span>Version Control Systems</span>
-        <ul>
-          <li>Git</li>
-          <li>SVN</li>
-        </ul>
-        <span>Build Automation</span>
-        <ul>
-          <li>Webpack</li>
-          <li>Gulp</li>
-        </ul>
-      </div>
-      <div class="languages">
-        <ul>
-          <li>Telugu</li>
-          <li>English</li>
-          <li>Hindi</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-  <section id="experience">
-    <h3>Experience</h3>
-    <p>I'm trying to learn and gain as much experience as possible each year.</p>
-    <h3>Work</h3>
-    <span>Remarkable Software Services</span>
-    <p>
-      It is focused on casino games. I'm responsible for implementing backend in
-      Node.js. Then I created a blackjack game using meteor, helping them to move from
-      unity to web(universal)
-    </p>
-    <h3>Education</h3>
-    <span>Vignan University</span>
-    <p>I chose electronics background and discontinued because of entrepreneurial bug</p>
-    <h3>Experiences</h3>
-    <span>Volunteering</span>
-    <p>Helping people to learn code at freecodecamp</p>
-  </section>
-  <section class="projects">
-    <h3>Projects</h3>
-    <p>My most recent work is in development, I have done web development and game development (which I both love to do).</p>
-  </section>
-  <section class="contact">
-    <h3>Contact</h3>
-    <h6>Thanks for visiting my website!</h6>
-    <p>If you have an offer or just want to say hi, you can contact me
-      by sending an email or filling out this form.</p>
-    <form action="">
-      <div class="name">
-        <p>Name</p>
-        <input type="text">
-      </div>
-      <div class="mail">
-        <p>Email</p>
-        <input type="email">
-      </div>
-      <div class="subject">
-        <p>Subject</p>
-        <input type="text">
-      </div>
-      <div class="message">
-        <p>Message</p>
-        <input type="text">
-      </div>
-      <button>Send</button>
-    </form>
-  </section>
-  <section class="quote">
-    <p>
-      Your time is limited, so don’t waste it living someone else’s life.
-      Don’t be trapped by dogma — which is living with the results of other
-      people’s thinking. Don’t let the noise of others’ opinions drown out
-      your own inner voice. And most important, have the courage to follow
-      your heart and intuition. They somehow already know what you truly
-      want to become. Everything else is secondary.
-      – Steve Jobs, June 12, 2005.
-    </p>
-  </section>
+      <h3>Education</h3>
+      <span>Vignan University</span>
+      <p>I chose electronics background and discontinued because of entrepreneurial bug</p>
+      <h3>Experiences</h3>
+      <span>Volunteering</span>
+      <p>Helping people to learn code at freecodecamp</p>
+    </section>
+    <section id="projects">
+      <h3>Projects</h3>
+      <p>My most recent work is in development, I have done web development and game development (which I both love to
+        do).</p>
+    </section>
+    <section id="contact">
+      <h3>Contact</h3>
+      <h6>Thanks for visiting my website!</h6>
+      <p>If you have an offer or just want to say hi, you can contact me
+        by sending an email or filling out this form.</p>
+      <form action="">
+        <div class="name">
+          <p>Name</p>
+          <input type="text">
+        </div>
+        <div class="mail">
+          <p>Email</p>
+          <input type="email">
+        </div>
+        <div class="subject">
+          <p>Subject</p>
+          <input type="text">
+        </div>
+        <div class="message">
+          <p>Message</p>
+          <input type="text">
+        </div>
+        <button>Send</button>
+      </form>
+    </section>
+    <section id="quote">
+      <p>
+        Your time is limited, so don’t waste it living someone else’s life.
+        Don’t be trapped by dogma — which is living with the results of other
+        people’s thinking. Don’t let the noise of others’ opinions drown out
+        your own inner voice. And most important, have the courage to follow
+        your heart and intuition. They somehow already know what you truly
+        want to become. Everything else is secondary.
+        – Steve Jobs, June 12, 2005.
+      </p>
+    </section>
+  </div>
 </div>
+
 </body>
 </html>

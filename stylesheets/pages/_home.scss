@@ -1,0 +1,36 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+.site {
+  display: grid;
+  grid-template-rows: auto;
+}
+
+header {
+   background-color: rebeccapurple;
+  min-height: 100vh;
+}
+
+#me {
+  background-color: aqua;
+}
+
+#skills {
+  background-color: burlywood;
+}
+
+#experience {
+  background-color: coral;
+}
+
+#projects {
+  background-color: fuchsia;
+}
+
+#contact {
+  background-color: indianred;
+}
+
+#quote {
+  background-color: salmon;
+}
