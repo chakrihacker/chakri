@@ -1,18 +1,60 @@
 // -----------------------------------------------------------------------------
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
-.site {
-  display: grid;
-  grid-template-rows: auto;
+html {
+  background: #0c0c0c;
 }
 
-header {
-   background-color: rebeccapurple;
+body {
+  overflow-x: hidden;
+  font-family: 'Dosis', 'Open Sans', 'Inconsolata', 'Lato', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#main {
+  position: relative;
+  z-index: 100;
+  background-color: #0c0c0c;
+}
+
+// Home
+
+#home {
+  min-height: 100vh;
+  padding: 0;
+}
+
+.home {
+  color: white;
+}
+
+.sec, .sec .wrap {
   min-height: 100vh;
 }
 
-#me {
-  background-color: aqua;
+#homeTextWrap {
+  position: absolute;
+  left: 0;
+  top: 40%;
+  z-index: 10000;
+  font-size: 2.5rem;
+  width: 60%;
+}
+
+#homeTextWrap h1 {
+  width: 100%;
+  line-height: 1.3;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 800;
+  font-size: 2.6vw;
+}
+
+#helloGreetings span {
+  display: block;
 }
 
 #skills {
@@ -33,4 +75,504 @@ header {
 
 #quote {
   background-color: salmon;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section {
+  display: block;
+}
+
+audio, canvas, video {
+  display: inline-block;
+}
+
+audio:not([controls]) {
+  display: none;
+}
+
+button, input, select, textarea {
+  font: inherit;
+}
+
+body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, strong, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, figure {
+  vertical-align: baseline;
+  background: transparent;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td {
+  vertical-align: top;
+}
+
+.floatLeft {
+  float: left;
+}
+
+.floatRight {
+  float: right;
+}
+
+a img, img {
+  border: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wrap {
+  margin: 0 auto;
+  position: relative;
+  width: 1300px;
+  min-height: 100%;
+  max-width: 75%;
+  box-sizing: border-box;
+}
+
+.roundedImg {
+  border-radius: 50%;
+}
+
+.fullWidthImg {
+  width: 100%;
+  display: block;
+  margin: 20px 0
+}
+
+.leftImgAlign {
+  float: left;
+  margin: 0 20px 20px 0;
+}
+
+.rightImgAlign {
+  float: right;
+  margin: 0 0 20px 20px;
+}
+
+.separator {
+  margin: 20px 0;
+  border-bottom: 1px solid white;
+}
+
+.js noscript {
+  display: none;
+}
+
+.sec:before {
+  top: 0;
+}
+
+.sec:after {
+  bottom: 0;
+}
+
+.sec:before, .sec:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background: red;
+  height: 1px;
+  opacity: 0.5
+}
+
+.sec {
+  background-image: linear-gradient(180deg, transparent 15px, rgba(255, 255, 255, .5));
+  background-size: 16px 16px;
+  background-repeat: repeat;
+}
+
+::-moz-selection {
+  background: #c22085;
+  color: #fff;
+  text-shadow: none;
+  opacity: 1
+}
+
+::selection {
+  background: #c22085;
+  color: #fff;
+  text-shadow: none;
+  opacity: 1
+}
+
+a, button {
+  text-decoration: none;
+  transition: all 0.3s ease-out;
+}
+
+a:link, a:visited {
+  color: white;
+  font-family: 'Inconsolata', monospace;
+}
+
+.no-touch a:hover, .no-touch a:active {
+  color: #e9b171
+}
+
+.currentLink {
+  cursor: default;
+}
+
+button:not(:focus), button:hover {
+  outline: none;
+  border: none;
+}
+
+button {
+  border-radius: 0
+}
+
+html {
+  font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+blockquote {
+  font-style: normal;
+}
+
+dfn {
+  font-style: italic;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+ins {
+  background: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+mark {
+  background: #ff0;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+pre, code, kbd, samp {
+  font-family: monospace, serif;
+  _font-family: 'courier new', monospace;
+  font-size: 1em;
+}
+
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+q {
+  quotes: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+small {
+  font-size: 85%;
+}
+
+sub, sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+h1, h2, h3, h4, h5, h6, strong {
+  font-weight: normal;
+}
+
+.alignCenter {
+  text-align: center;
+}
+
+.alignRight {
+  text-align: right
+}
+
+.alignLeft {
+  text-align: left
+}
+
+.darkHighlightColor {
+  color: #ba4732
+}
+
+.highlight {
+  text-decoration: underline;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  list-style-image: none;
+}
+
+dd {
+  margin: 0;
+}
+
+.numberedList {
+  padding-left: 2em;
+}
+
+.numberedList li {
+  list-style: decimal;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  height: 0;
+  overflow: visible;
+  pointer-events: none;
+  z-index: 999;
+  left: 0;
+  top: 0;
+}
+
+
+/* =============================================================================
+	 Library Styles
+	 ========================================================================== */
+/* =============================================================================
+		Media Queries
+	 ========================================================================== */
+@media only screen and (min-width: 1900px) {
+  html {
+    font-size: 18px;
+  }
+
+  header {
+    max-width: 1850px;
+    margin-left: auto;
+    margin-right: auto;
+    right: 0;
+  }
+
+  header .wrap {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .logo, #hamburger {
+    position: absolute;
+  }
+}
+
+@media only screen and (max-width: 1900px) {
+  html {
+    font-size: 17px;
+  }
+}
+
+@media only screen and (min-width: 1733px) {
+
+}
+
+@media only screen and (max-width: 1733px) {
+  /* 75% of x = 1300
+  Thus, x = 1300/.75 = 1733
+  */
+  html {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 1430px) {
+
+}
+
+@media only screen and (max-width: 1500px) {
+  html {
+    font-size: 15px;
+  }
+
+}
+
+@media only screen and (max-width: 1400px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+
+}
+
+@media only screen and (min-width: 899px) and (max-width: 1300px) {
+
+}
+
+@media only screen and (min-width: 899px) and (max-width: 1260px) {
+
+}
+
+@media only screen and (max-width: 1072px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  html {
+    font-size: 11px;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  html {
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+}
+
+@media only screen and (max-width: 401px) {
+  html {
+    font-size: 10.5px
+  }
+}
+
+@media only screen and (max-width: 350px) {
+}
+
+@media only screen and (min-aspect-ratio: 1/1) {
+}
+
+@media only screen and (max-aspect-ratio: 1/1) {
+}
+
+/* =============================================================================
+		Misc Styles and Non-Symantic Class/Hacks
+	 ========================================================================== */
+/* Hide from both screenreaders and browsers: h5bp.com/u */
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+/* Contain Floats */
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.sec {
+  background-image: none !important;
+}
+
+.sec:before, .sec:after {
+  display: none !important
+}
+
+.sec {
+  background-image: none !important;
+}
+
+.sec {
+  padding: 2rem 0;
+}
+
+/*
+	A Fancy "image not loaded" message
+*/
+img:before, image:before {
+  content: '';
+  display: block;
+  border: 1px solid black;
+  height: calc(100% + 10px);
+  background: rgb(230, 230, 230);
+  position: absolute;
+  top: -5px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 5px;
+}
+
+img:after, image:after {
+  content: 'Please wait Loading Image...';
+  display: block;
+  font-size: 20px;
+  line-height: 1;
+  font-family: sans-serif;
+  width: 100%;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  text-align: center;
+}
+
+.no-flick {
+  -webkit-transform: translate3d(0, 0, 0);
+}
+
+.js noscript img {
+  display: none;
+}
+
+/* No JS */
+.No-jsWarn {
+  background: #e2b8aa;
+  text-align: center;
+  font-size: 2rem;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  line-height: 1.5
+}
+
+.No-jsWarn a {
+  color: #0c0c0c !important;
+}
+
+/* =============================================================================
+		Print Styles
+	 ========================================================================== */
+@media print {
+  #unnecessary-things {
+    display: none
+  }
 }
